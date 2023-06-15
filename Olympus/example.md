@@ -312,6 +312,7 @@ The example above is doing a loop when the bot is not offline and sending discon
 `addHook(string_fname,string_name,fun)`
 
 available fname: `onvariant,onrawpacket,ontrackpacket,onpacket`
+
 structure onvariant: [VarList](structure.md#VarList)
 
 Added hook to bot, here param structure function 
@@ -389,3 +390,24 @@ setBool("Auto Access",true)
 ```
 
 The example above will active toogle Auto Access
+
+## setProxy
+`setProxy(string_ip,int_port)`
+
+set connection proxy ip and port
+
+example:
+```lua
+setProxy('123.456.789',4444)
+```
+
+The example above will set connection proxy ip and port
+
+## setProxyAuth
+`setProxyAuth(string_user,string_pass)`
+
+
+set proxy authentication,setProxy ```diff Red Required```
+
+example:
+```lua

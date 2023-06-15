@@ -11,8 +11,6 @@ say("Hello world")
 sleep(4000)
 ```
 
-the example above gives a sleep of 4 seconds after saying Hello world
-
 ## error
 `error()`
 
@@ -25,8 +23,6 @@ if findItem(98) == 0 then
     return error()
 end
 ```
-
-The example above is how to forcibly stop the script
 
 ## say
 `say(string text)`
@@ -42,8 +38,6 @@ else
 end
 ```
 
-The example above will say the words according to the conditions
-
 ## move
 `move(rel_x,rel_y,bool solid)`
 
@@ -54,8 +48,6 @@ Example:
 move(5,0)
 sleep(500)
 ```
-
-The example above bot will move 5 tile from last position
 
 ## findPath
 `findPath(int_x,int_y)`
@@ -70,8 +62,6 @@ if getTile(86,30).fg == 12 then
 end
 ```
 
-The example above bot will find path to position x 86 and y 30 if value fg return 12|Door
-
 ## findItem
 `findItem(int_itemid)`
 
@@ -85,8 +75,6 @@ if findItem(4585) >= 190 then
 end
 ```
 
-the example above is when the bot does findItem on itemid 4585 and the number is 190 or more the bot will drop as much as 100
-
 ## findClothes
 `findClothes(int_itemid)`
 
@@ -98,8 +86,6 @@ if findClothes(98) then
     print("I used Pickaxe")
 end
 ```
-
-The example above is checking if bot wearing a pickaxe or not
 
 ## punch
 `punch(rel_x,rel_y)`
@@ -114,8 +100,6 @@ while getTile(x,y).fg ~= 0 do
 end
 ```
 
-The example above is when the bot detects the fg value is not 0 in certain x and y positions the bot will destroy until the fg value is 0
-
 ## place
 `place(int_itemid,rel_x,rel_y)`
 
@@ -129,8 +113,6 @@ while getTile(math.floor(getBot().x / 32),math.floor(getBot().y / 32)).fg ~= 3 d
 end
 ```
 
-The example above is when the fg value in the current position x and y is not 3 the bot will place it until the fg value is 3
-
 ## wrench
 `wrench(rel_x,rel_y)`
 
@@ -142,8 +124,6 @@ wrench(x,y)
 sendPacket("action|dialog_return\ndialog_name|door_edit\ntilex|" ..x .. "|\ntiley|" .. y .. "|\ndoor_name|imoets\ndoor_target|\ndoor_id|Olympus",2)
 ```
 
-In the example above the bot changes the id door after doing the wrench
-
 ## drop
 `drop(int_itemid,int_amount|nil)`
 
@@ -154,8 +134,6 @@ Example:
 drop(4585,100) --- bot dropping 100 Pepper seed
 drop(4585) --- bot dropping all pepper seed in backpack
 ```
-
-The example above bot will drops with 100 amount and drop all item on backpack
 
 ## enter
 `enter()`
@@ -170,8 +148,6 @@ if getTile(math.floor(getBot().x / 32),math.floor(getBot().y / 32)).fg == 12 the
 end
 ```
 
-The example above is when the bot detects the value of fg 12 the bot will enter
-
 ## wear
 `wear(int_itemid)`
 
@@ -184,8 +160,6 @@ if not findClothes(98) then
     sleep(500)
 end
 ```
-
-The example above is when the bot not wearing pickaxe will sending wear packet
 
 ## collect
 
@@ -208,8 +182,6 @@ for _,object in pairs(getObjects()) do
 end
 ```
 
-The example above is when the bot detecting floating itemid 98 bot will send a collect packet
-
 ## collectSet
 `collectSet(bool,int_radius)`
 
@@ -230,8 +202,6 @@ for _,object in pairs(getObjects()) do
 end
 ```
 
-The example above is when the bot detecting floating itemid 98 bot will active toogle collect
-
 ## sendPacket
 `sendPacket(string_packet,int_type)`
 
@@ -242,8 +212,6 @@ Example:
 sendPacket("action|join_request\nname|Olympus\ninvitedWorld|0",3)
 sleep(10000)
 ```
-
-The example above is that the bot will send a sendPacket to warp / move the world
 
 ## addBot
 `addBot(string_name,string_pass|bol|nil,string_proxy|nil)`
@@ -261,8 +229,6 @@ addBot("Olympus","password")
 addBot("Olympus","password","123:444:olmypus:olym1")
 ```
 
-The example above is the use of the addBot function
-
 ## removeBot
 `removeBot(string_name)`
 
@@ -273,8 +239,6 @@ Example:
 removeBot(getBot().name)
 sleep(100)
 ```
-
-The example above is to remove the selected bot from the Olympus list table
 
 ## connect
 `connect()`
@@ -290,8 +254,6 @@ while getBot().status ~= 'online' do
 end
 ```
 
-The example above is doing a loop when the status bot is not online and sending connect packets until the status bot online
-
 ## disconnect
 `disconnect()`
 
@@ -305,8 +267,6 @@ while getBot().status ~= 'offline' do
     sleep(10000) --- sleep 10s
 end
 ```
-
-The example above is doing a loop when the bot is not offline and sending disconnect packets until the status bot offline
 
 ## addHook
 `addHook(string_fname,string_name,fun)`
@@ -328,8 +288,6 @@ addHook("onvariant","nuked",function(var)
 end)
 ```
 
-The example above is for an onvariant function, when it detects that the console value is That world is inaccessible. then the nuked variable evaluates to true
-
 ## removeHooks
 `removeHooks()`
 
@@ -348,8 +306,6 @@ sleep(10000)
 removeHooks()
 ```
 
-The example above is when you have added a hook after 10 seconds the hook will be deleted
-
 ## getPing
 `getPing()`
 
@@ -359,8 +315,6 @@ Example:
 ```lua
 print(tostring(getPing()))
 ```
-
-The example above will display a connection ping on the bot
 
 ## request
 `request(string_type,string_url)`
@@ -375,8 +329,6 @@ local text = request("GET","example.com/raw")
 print(text)
 ```
 
-The example above will showing string text of request
-
 ## setBool
 `setBool(string_type,bool_status)`
 
@@ -389,19 +341,13 @@ Example:
 setBool("Auto Access",true)
 ```
 
-The example above will active toogle Auto Access
-
 ## setProxy
 `setProxy(string_ip,int_port)`
-
-set connection proxy ip and port
 
 Example:
 ```lua
 setProxy('123.456.789',4444)
 ```
-
-The example above will set connection proxy ip and port
 
 ## setProxyAuth
 `setProxyAuth(string_user,string_pass)`
@@ -416,5 +362,22 @@ sleep(100)
 setProxyAuth('Olympus','OlympusPass')
 sleep(100)
 ```
-The example above will set connection proxy ip and port also set authentication for username and password
 
+## eat
+`eat(int_itemid)`
+
+Place in local bot position
+
+```Example:
+eat(4604)
+```
+
+## getBot
+`getBot(string_name|nil)`
+
+Get selected bot, return the bot's [BotClient](structure.md#BotClient)
+
+Example:
+```lua
+print(getBot().name)
+```

@@ -16,5 +16,4 @@ Tempatkan helper.lua pada direktori yang sama dengan main skrip yang ingin anda 
 
 # Result
 
-![Untitled video - Made with Clipchamp (1)](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTU2ZTg0ZGM5ZTljNjE5Y2RiN2NiOWNmY2QyZDQ5MjQ1Y2U5NGMwYSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/Yh0XCW0Xs1OJsbuNUe/giphy.gif)
-
+![Example](https://github.com/Hyokais/Olympus-Docs/assets/136238895/58b88b5b-adba-4eb0-aa73-fe0ebd17713d)

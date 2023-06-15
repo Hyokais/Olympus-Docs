@@ -9,6 +9,19 @@
 | Number | `flags` | Tile's flags |
 | Boolean | `ready` | Is ready to harvest |
 
+## BotClient
+| Type | Name | Description |
+|:-----|:----:|:-----------|
+| String | `name` | Name of bot |
+| String | `status` | Status of bot |
+| String | `captcha` | Captcha status of bot |
+| String | `world` | world of bot |
+| Number | `level` | Level of bot |
+| Number | `x` | Position x of bot |
+| Number | `y` | Position y of bot |
+| String | `proxy` | Proxy of bot |
+| String | `proxyStatus` | Status proxy of bot |
+
 ## VarList
 | Type | Name | Description |
 |:-----|:----:|:-----------|

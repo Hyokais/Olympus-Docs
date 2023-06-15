@@ -407,17 +407,13 @@ The example above will set connection proxy ip and port
 `setProxyAuth(string_user,string_pass)`
 
 
-set proxy authentication,setProxy ```diff Red Required```
+set proxy authentication,setProxy - Required -
 
 Example:
 ```lua
+setProxy('123.456.789',4444)
+sleep(100)
+setProxyAuth('Olympus','OlympusPass')
+sleep(100)
 ```
-
-```diff
-+ Green
-- Red
-! Orange
-@@ Pink @@
-# Gray
-```
-...
+The example above will set connection proxy ip and port also set authentication for username and password

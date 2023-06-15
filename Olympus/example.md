@@ -313,4 +313,4 @@ The example above is doing a loop when the bot is not offline and sending discon
 
 
 
-Added hook to bot, here structure function [HookList](structure.md#HookList)
+Added hook to bot, here param structure [HookList](structure.md#HookList)

@@ -197,7 +197,7 @@ Example:
 ```lua
 for _,object in pairs(getObjects()) do
     if object.id == 98 then
-        findPath(math.floor(object.y / 32),math.floor(objet.y / 32))
+        findPath(math.floor(object.y / 32),math.floor(object.y / 32))
         sleep(500)
         collect(3)
         sleep(500)
@@ -219,7 +219,7 @@ Example:
 ```lua
 for _,object in pairs(getObjects()) do
     if object.id == 98 then
-        findPath(math.floor(object.y / 32),math.floor(objet.y / 32))
+        findPath(math.floor(object.y / 32),math.floor(object.y / 32))
         sleep(500)
         collectSet(true,3)
         sleep(500)
@@ -232,4 +232,64 @@ end
 
 The example above is when the bot detecting floating itemid 98 bot will active toogle collect
 
-##
+## sendPacket
+`sendPacket(string_packet,int_type)`
+
+Send a server packet from the bot.
+
+Example:
+```lua
+sendPacket("action|join_request\nname|Olympus\ninvitedWorld|0",3)
+sleep(10000)
+```
+
+The example above is that the bot will send a sendPacket to warp / move the world
+
+## addBot
+`addBot(string_name,string_pass|bol|nil,string_proxy|nil)`
+
+Adding bots to the olympus application
+Example:
+```lua
+---Add Guest Without Proxy
+addBot("Olympus")
+---Add Guest With Proxy
+addBot("Olympus",true,"123:444:olmypus:olym1")
+---Normal add without proxy
+addBot("Olympus","password")
+---Normal add with proxy
+addBot("Olympus","password","123:444:olmypus:olym1")
+```
+
+The example above is the use of the addBot function
+
+## removeBot
+`removeBot(string_name)`
+
+Removing bot from Olympus list table
+
+Example:
+```lua
+removeBot(getBot().name)
+sleep(100)
+```
+
+The example above is to remove the selected bot from the Olympus list table
+
+## connect
+`connect()`
+
+Send a connect packet
+
+Example:
+```lua
+--- looping until bot status online
+while getBot().status ~= 'online' do
+    connect() --- send a connect packet
+    sleep(10000) --- sleep 10s
+end
+```
+
+The example above is doing a loop when the status bot is not online and sending connect packets until the status bot online
+
+## disconnect

@@ -156,3 +156,80 @@ drop(4585) --- bot dropping all pepper seed in backpack
 ```
 
 The example above bot will drops with 100 amount and drop all item on backpack
+
+## enter
+`enter()`
+
+Send a enter door packet on local bot position
+
+Example:
+```lua
+if getTile(math.floor(getBot().x / 32),math.floor(getBot().y / 32)).fg == 12 then
+    enter()
+    sleep(100)
+end
+```
+
+The example above is when the bot detects the value of fg 12 the bot will enter
+
+## wear
+`wear(int_itemid)`
+
+Send a wear packet to wear an clothing item id.
+
+Example:
+```lua
+if not findClothes(98) then
+    wear(98)
+    sleep(500)
+end
+```
+
+The example above is when the bot not wearing pickaxe will sending wear packet
+
+## collect
+
+`collect(int_radius,int_itemid|nil)`
+
+Send a collect packet and ignore item id if there is any.
+
+Example:
+```lua
+for _,object in pairs(getObjects()) do
+    if object.id == 98 then
+        findPath(math.floor(object.y / 32),math.floor(objet.y / 32))
+        sleep(500)
+        collect(3)
+        sleep(500)
+    end
+    if findItem(98) > 0 then
+        break
+    end
+end
+```
+
+The example above is when the bot detecting floating itemid 98 bot will send a collect packet
+
+## collectSet
+`collectSet(bool,int_radius)`
+
+Toggle auto collect items with range.
+
+Example:
+```lua
+for _,object in pairs(getObjects()) do
+    if object.id == 98 then
+        findPath(math.floor(object.y / 32),math.floor(objet.y / 32))
+        sleep(500)
+        collectSet(true,3)
+        sleep(500)
+    end
+    if findItem(98) > 0 then
+        break
+    end
+end
+```
+
+The example above is when the bot detecting floating itemid 98 bot will active toogle collect
+
+##

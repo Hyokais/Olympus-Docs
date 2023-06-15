@@ -43,3 +43,31 @@ end
 ```
 
 The example above will say the words according to the conditions
+
+## move
+`move(rel_x,rel_y,bool solid)`
+
+Send move packet on relative position
+
+Example:
+```lua
+move(5,0)
+sleep(500)
+```
+
+The example above bot will move 5 tile from last position
+
+## findPath
+`findPath(int_x,int_y)`
+
+Find path to specific tile in worlds
+
+Example:
+```lua
+if getTile(86,30).fg == 12 then
+    findPath(86,30)
+    sleep(200)
+end
+```
+
+The example above bot will find path to position x 86 and position y 30 if value fg return 12|Door

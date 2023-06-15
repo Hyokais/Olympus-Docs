@@ -327,3 +327,64 @@ end)
 ```
 
 The example above is for an onvariant function, when it detects that the console value is That world is inaccessible. then the nuked variable evaluates to true
+
+## removeHooks
+`removeHooks()`
+
+Removing all hooks in bot
+
+Example:
+```lua
+addHook("onvariant","nuked",function(var)
+    if var[0] == "OnConsoleMessage" then
+        if string.find(var[1],"That world is inaccessible.") then
+            nuked = true
+        end
+    end
+end)
+sleep(10000)
+removeHooks()
+```
+
+The example above is when you have added a hook after 10 seconds the hook will be deleted
+
+## getPing
+`getPing()`
+
+Return ping speed connection
+
+Example:
+```lua
+print(tostring(getPing()))
+```
+
+The example above will display a connection ping on the bot
+
+## request
+`request(string_type,string_url)`
+
+available type: `GET,PATCH,POST`
+
+Make https request
+
+Example:
+```lua
+local text = request("GET","example.com/raw")
+print(text)
+```
+
+The example above will showing string text of request
+
+## setBool
+`setBool(string_name,bool_status)`
+
+name available: `Auto Access, Auto Reconnect, Ignore Gems`
+
+set toogle value inside a Olympus
+
+example:
+```lua
+setBool("Auto Access",true)
+```
+
+The example above will active toogle Auto Access

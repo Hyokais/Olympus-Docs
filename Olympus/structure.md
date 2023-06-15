@@ -25,9 +25,18 @@
 ## VarList
 | Type | Name | Description |
 |:-----|:----:|:-----------|
-| String | [0] | Variant function name |
-| any | [1] | Param1 |
-| any | [2] | Param2 |
-| any | [3] | Param3 |
-| any | [4] | Param4 |
-| any | [5] | Param5 |
+| String | `[0]` | Variant function name |
+| any | `[1]` | Param1 |
+| any | `[2]` | Param2 |
+| any | `[3]` | Param3 |
+| any | `[4]` | Param4 |
+| any | `[5]` | Param5 |
+
+## WorldObject
+| Type | Name | Description |
+|:-----|:-----| :-----------|
+| Number | `id` | Object's item ID |
+| Number | `count` | Object's item amount |
+| Number | `oid` | Object's index |
+| Number | `x` | Object's position x |
+| Number | `y` | Object's position y |

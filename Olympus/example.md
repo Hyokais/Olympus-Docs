@@ -299,10 +299,18 @@ send a disconnect packet
 
 Example:
 ```lua
+--- looping until bot status offline
 while getBot().status ~= 'offline' do
-    disconnect()
-    sleep(10000)
+    disconnect() --- send a disconnect packet
+    sleep(10000) --- sleep 10s
 end
 ```
 
 The example above is doing a loop when the bot is not offline and sending disconnect packets until the status bot offline
+
+## addHook
+`addHook(string_fname,string_name,fun)`
+
+
+
+Added hook to bot, here structure function [HookList](structure.md#HookList)

@@ -9,14 +9,7 @@
 | Number | `flags` | Tile's flags |
 | Boolean | `ready` | Is ready to harvest |
 
-## HookList
-| Type | Name | Description |
-|:-----|:----:|:-----------|
-| String | fname | onvariant,onrawpacket,ontrackpacket,onpacket |
-| String | hookname | any |
-| function | any | onvariant structure [varlist](#Varlist) |
-
-## Varlist
+## VarList
 | Type | Name | Description |
 |:-----|:----:|:-----------|
 | String | [0] | Variant function name |

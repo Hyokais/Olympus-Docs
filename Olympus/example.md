@@ -384,7 +384,7 @@ available type : `Auto Access, Auto Reconnect, Ignore Gems`
 
 set toogle value inside a Olympus
 
-example:
+Example:
 ```lua
 setBool("Auto Access",true)
 ```
@@ -396,7 +396,7 @@ The example above will active toogle Auto Access
 
 set connection proxy ip and port
 
-example:
+Example:
 ```lua
 setProxy('123.456.789',4444)
 ```
@@ -409,5 +409,14 @@ The example above will set connection proxy ip and port
 
 set proxy authentication,setProxy ```diff Red Required```
 
-example:
+Example:
 ```lua
+
+
+```diff
++ Green
+- Red
+! Orange
+@@ Pink @@
+# Gray
+...

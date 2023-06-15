@@ -407,7 +407,7 @@ The example above will set connection proxy ip and port
 `setProxyAuth(string_user,string_pass)`
 
 
-set proxy authentication,setProxy - Requireds -
+set proxy authentication,setProxy $\textcolor{red}{\textsf{Color didint work .}}$ 
 
 Example:
 ```lua
@@ -417,8 +417,4 @@ setProxyAuth('Olympus','OlympusPass')
 sleep(100)
 ```
 The example above will set connection proxy ip and port also set authentication for username and password
-
-#### $\textcolor{red}{\textsf{Color didint work .}}$ 
-
-#### $\textcolor{green}{\textsf{Color didint work .}}$ 
 

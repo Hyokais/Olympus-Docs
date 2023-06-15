@@ -407,7 +407,7 @@ The example above will set connection proxy ip and port
 `setProxyAuth(string_user,string_pass)`
 
 
-set proxy authentication,setProxy - Required -
+set proxy authentication,setProxy - Requireds -
 
 Example:
 ```lua

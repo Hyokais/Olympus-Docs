@@ -293,3 +293,16 @@ end
 The example above is doing a loop when the status bot is not online and sending connect packets until the status bot online
 
 ## disconnect
+`disconnect()`
+
+send a disconnect packet
+
+Example:
+```lua
+while getBot().status ~= 'offline' do
+    disconnect()
+    sleep(10000)
+end
+```
+
+The example above is doing a loop when the bot is not offline and sending disconnect packets until the status bot offline

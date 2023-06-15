@@ -14,7 +14,7 @@
 |:-----|:----:|:-----------|
 | String | fname | onvariant,onrawpacket,ontrackpacket,onpacket |
 | String | hookname | any |
-| function | any | onvariant structure[varlist](#Varlist) |
+| function | any | onvariant structure [varlist](#Varlist) |
 
 ## Varlist
 | Type | Name | Description |

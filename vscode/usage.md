@@ -1,3 +1,5 @@
+<- * [Back to main](README.md)
+
 # Helper Documentation
 * [ENG]
 Helper documentation is used to display all the functions that are in olympus when using vscode

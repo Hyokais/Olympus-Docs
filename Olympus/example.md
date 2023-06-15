@@ -70,4 +70,19 @@ if getTile(86,30).fg == 12 then
 end
 ```
 
-The example above bot will find path to position x 86 and position y 30 if value fg return 12|Door
+The example above bot will find path to position x 86 and y 30 if value fg return 12|Door
+
+## findItem
+`findItem(int_itemid)`
+
+Count the number of items in inventory
+
+Example:
+```lua
+if findItem(4585) >= 190 then
+    drop(4585,100)
+    sleep(1000)
+end
+```
+
+the example above is when the bot does findItem on itemid 4585 and the number is 190 or more the bot will drop as much as 100

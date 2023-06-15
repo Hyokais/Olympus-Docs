@@ -7,3 +7,4 @@ place helper.lua in the same directory as the main script you want to use
 Tempatkan helper.lua pada direktori yang sama dengan main skrip yang ingin anda gunakan
 
 # Result
+![result](video/result.mp4)

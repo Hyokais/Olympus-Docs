@@ -38,3 +38,8 @@
 * [getInventory](example.md#getInventory)()
 * [getClothes](example.md#getClothes)()
 * [sendPacketRaw](example.md#sendPacketRaw)(packet,flags)
+
+# Structure
+* [WorldTile](structure.md#WorldTile)
+* [WorldObject](structure.md#WorldObject)
+* [InventoryItem](structure.md#InventoryItem)

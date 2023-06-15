@@ -417,3 +417,8 @@ setProxyAuth('Olympus','OlympusPass')
 sleep(100)
 ```
 The example above will set connection proxy ip and port also set authentication for username and password
+
+#### $\textcolor{red}{\textsf{Color didint work .}}$ 
+
+#### $\textcolor{green}{\textsf{Color didint work .}}$ 
+

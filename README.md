@@ -8,3 +8,6 @@ Olympus is a growtopia bot client created by baginda Tyo
 
 # Helper Vscode
 * [Helper function on vscode](vscode/usage.md)
+
+# Version
+2.9

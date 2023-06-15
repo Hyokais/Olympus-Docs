@@ -313,4 +313,17 @@ The example above is doing a loop when the bot is not offline and sending discon
 
 
 
-Added hook to bot, here param structure [HookList](structure.md#HookList)
+Added hook to bot, here param structure function [HookList](structure.md#HookList)
+
+Example:
+```lua
+addHook("onvariant","nuked",function(var)
+    if var[0] == "OnConsoleMessage" then
+        if string.find(var[1],"That world is inaccessible.") then
+            nuked = true
+        end
+    end
+end)
+```
+
+The example above is for an onvariant function, when it detects that the console value is That world is inaccessible. then the nuked variable evaluates to true

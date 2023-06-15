@@ -1,4 +1,4 @@
-# [Back to main](Olympus-Docs/README.md)
+# [Back to main](../README.md)
 
 # Helper Documentation
 * [ENG]

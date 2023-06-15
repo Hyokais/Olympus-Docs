@@ -411,7 +411,7 @@ set proxy authentication,setProxy ```diff Red Required```
 
 Example:
 ```lua
-
+```
 
 ```diff
 + Green
@@ -419,4 +419,5 @@ Example:
 ! Orange
 @@ Pink @@
 # Gray
+```
 ...

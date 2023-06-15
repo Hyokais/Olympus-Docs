@@ -311,9 +311,10 @@ The example above is doing a loop when the bot is not offline and sending discon
 ## addHook
 `addHook(string_fname,string_name,fun)`
 
+available fname: `onvariant,onrawpacket,ontrackpacket,onpacket`
+structure onvariant: [VarList](structure.md#VarList)
 
-
-Added hook to bot, here param structure function [HookList](structure.md#HookList)
+Added hook to bot, here param structure function 
 
 Example:
 ```lua
@@ -376,9 +377,9 @@ print(text)
 The example above will showing string text of request
 
 ## setBool
-`setBool(string_name,bool_status)`
+`setBool(string_type,bool_status)`
 
-name available: `Auto Access, Auto Reconnect, Ignore Gems`
+available type : `Auto Access, Auto Reconnect, Ignore Gems`
 
 set toogle value inside a Olympus
 

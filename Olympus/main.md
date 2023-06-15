@@ -41,5 +41,7 @@
 
 # Structure
 * [WorldTile](structure.md#WorldTile)
+* [BotClient](structure.md#BotClient)
 * [WorldObject](structure.md#WorldObject)
 * [InventoryItem](structure.md#InventoryItem)
+* [HookList](structure.md#HookList)
